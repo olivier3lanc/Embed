@@ -10,6 +10,6 @@ $embed = new Embed();
 //Load multiple urls asynchronously:
 $info = $embed->get($_GET['link']);
 // echo '<pre>'.$_GET['link'].'</pre>';
-echo '[{"title":"'.$info->title.'","description":"'.$info->description.'"}]';
+echo '[{"title":"'.addslashes($info->title).'","description":"'.addslashes($info->description).'"}]';
 ?>
 
