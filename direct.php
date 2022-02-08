@@ -9,22 +9,10 @@ $embed = new Embed();
 
 //Load multiple urls asynchronously:
 $infos = $embed->getMulti(
-    'https://caniuse.com/',
-    'https://caninclude.glitch.me/',
-    'https://cssloaders.github.io/',
-    'https://readme-gen.vercel.app/app',
-    'https://hoppscotch.io/fr',
-    'https://readme.so/fr',
-    'https://tiny-helpers.dev/',
-    'https://coding-fonts.css-tricks.com/',
-    'https://www.matuzo.at/blog/html-boilerplate/',
-    'https://htmlboilerplates.com/',
-    'https://zerodivs.com/',
-    'https://www.strfti.me/',
-    'https://appydev.co/',
-    'https://1loc.dev/',
-    'https://htmldom.dev/',
-    'https://transform.tools/',
+    'https://goodies.pixabay.com/javascript/auto-complete/demo.html',
+    'https://leaverou.github.io/awesomplete/#advanced-examples',
+    'http://autocomplete-js.com/#documentation',
+    'https://www.w3schools.com/howto/howto_js_autocomplete.asp',
 );
 ?>
 

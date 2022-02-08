@@ -49,9 +49,12 @@
                                 // The API call was successful!
                                 return response.text();
                             }).then(function (html) {
-                                const result = JSON.parse(html);
-                                console.log(result);
-                                const markdown = '* ['+result[0].title+']('+link+') '+result[0].description+'\r\n';
+                                // const result = JSON.parse(html);
+                                
+                                const title = html.split('____:')[0];
+                                const description = html.split('____:')[1];
+                                // console.log(title,description);
+                                const markdown = '* ['+title+']('+link+') '+description+'\r\n';
                                 app.elements.results.insertAdjacentHTML('beforeend', markdown);
                                 app.elements.progress.style.color = 'orange';
                                 app.elements.progress_done.innerHTML = i;
