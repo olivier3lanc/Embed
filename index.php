@@ -51,10 +51,10 @@
                             }).then(function (html) {
                                 // const result = JSON.parse(html);
                                 
-                                const title = html.split('____:')[0];
-                                const description = html.split('____:')[1];
+                                const title = html.split('____')[0];
+                                const description = html.split('____')[1];
                                 // console.log(title,description);
-                                const markdown = '* ['+title+']('+link+') '+description+'\r\n';
+                                const markdown = '* ['+title+']('+link+') '+description;
                                 app.elements.results.insertAdjacentHTML('beforeend', markdown);
                                 app.elements.progress.style.color = 'orange';
                                 app.elements.progress_done.innerHTML = i;
